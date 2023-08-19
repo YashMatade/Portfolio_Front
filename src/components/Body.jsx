@@ -4,7 +4,7 @@ import mern from "../assets/mern.png";
 import resume from "../assets/resume.pdf"
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import { BiLogoWhatsapp } from "react-icons/bi"
 const Body = () => {
     const [isHovered, setIsHovered] = useState(false);
     let navigate = useNavigate()
@@ -49,9 +49,8 @@ const Body = () => {
                         </button>
                         <a href="https://www.linkedin.com/in/yash-matade-aaa159143/" target='_blank' className='animate__animated  animate__fadeInUp btn btn-primary text-white  mb-3 shadow'><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i>
                         </a>
-                        <button className='animate__animated  animate__fadeInUp btn btn-success ms-3 text-white  mb-3 shadow' onClick={handleClick}>
-                            <img width={"20px"} src="https://o.remove.bg/downloads/4f1d57ec-aa23-4ff6-99b1-50b0c713d478/download-removebg-preview.png"
-                                alt="" />
+                        <button className='animate__animated  animate__fadeInUp btn btn-light ms-3 text-white  mb-3 shadow' onClick={handleClick}>
+                            <BiLogoWhatsapp color='green' size={22} />
                         </button>
                     </div>
                     <div className="col-lg-6 text-center mt-5">

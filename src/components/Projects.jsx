@@ -35,8 +35,7 @@ const Projects = () => {
                                     return <div className="col-lg-4 mt-5  animate__animated animate__backInDown" >
                                         <div className="image-container" style={{ borderRadius: "20px" }}>
                                             <iframe src={project.projecturl} loading='yes' width={"100%"} scrolling='no' height={"100%"} frameborder="0"></iframe>
-                                            <img src={Strings.UPLOADS + project.projectImg} style={{ width: "auto", height: "200px" }} className='img-fluid' alt="" />
-                                            <div className="image-info">
+                                            <div className="image-info p-2">
                                                 <h5>{project.projectName}</h5>
                                                 <p>{project.description}</p>
                                             </div>
@@ -51,10 +50,10 @@ const Projects = () => {
                                                         </a>
                                                     </h5>
                                                 </div>
-                                                <div className="text-center">
+                                                <div className=" d-flex justify-content-center" style={{ height: "100px" }}>
                                                     {
                                                         project.techUsed.map((p, key) => {
-                                                            return <span className="badge bg-dark text-white me-1" key={key}>{p}</span>
+                                                            return <span style={{ fontSize: "15px", height: "25px" }} className="badge badge-lg bg-dark text-white me-1 mb-1" key={key}>{p}</span>
                                                         })
                                                     }
                                                 </div>
